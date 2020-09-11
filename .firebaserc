@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "blessing-56558"
+  },
+  "targets": {
+    "blessing-56558": {
+      "hosting": {
+        "dev": [
+          "blessing-weather-app"
+        ]
+      }
+    }
+  }
+}

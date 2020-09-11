@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="weather update application" />
+    <title>Weather Forecast App</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="manifest" href="manifest.json" />
+
+<!-- ios support -->
+<link rel="apple-touch-icon" href="images/icons/icon-72x72.png" />
+<link rel="apple-touch-icon" href="images/icons/icon-96x96.png" />
+<link rel="apple-touch-icon" href="images/icons/icon-128x128.png" />
+<link rel="apple-touch-icon" href="images/icons/icon-144x144.png" />
+<link rel="apple-touch-icon" href="images/icons/icon-152x152.png" />
+<link rel="apple-touch-icon" href="images/icons/icon-192x192.png" />
+<link rel="apple-touch-icon" href="images/icons/icon-384x384.png" />
+<link rel="apple-touch-icon" href="images/icons/icon-512x512.png" />
+<meta name="apple-mobile-web-app-status-bar" content="#53627c" />
+<meta name="theme-color" content="#53627c" />
+</head>
+
+<body>
+  <div class="main-wrap">
+
+    <section class="top-banner">
+        <div class="container">
+          <h1 class="heading">Weather Forcast App</h1>
+         
+          <form>
+            <input type="text" autocomplete="country-name"
+            class="search-box" placeholder="Search for a city" required autofocus>
+            <button type="submit">SUBMIT</button>
+          </form>
+          <div id="info-wrap"><span id="error-message"></span></div>
+          
+          
+        </div>
+        
+      </section>
+
+      <main>
+        <section class="location">
+        <div class="city"></div>
+        <div class="date">Day Date Month Year</div>
+        </section>
+        <div class="current">
+        <div class="temp">..<span>°c</span></div>
+        <div class="feels-like"></div>
+        <img src="" alt="" class="temp-icon" />
+        <div class="temp-description"></div>
+        <div class="hi-low">..°c / ..°c</div>
+        </div>
+        </main>
+
+      <footer class="page-footer">
+        <div class="container">
+          <small><a target="_blank" href="https://www.linkedin.com/in/blessing-elendu"> Designed by Blessing Elendu</a>
+          </small>
+        </div>
+      </footer>
+  </div>
+  
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.20.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/7.20.0/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+      <script src="js/main.js"></script>
+</body>
+</html>

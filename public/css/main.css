@@ -1,0 +1,275 @@
+:root {
+  --bg_main: #0a1f44;
+  --text_light: #fff;
+  --text_med: #53627c;
+  --text_dark: #1e2432;
+  --red: #ff1e42;
+  --darkred: #c3112d;
+  --orange: #ff8c00;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: normal;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+ 
+input {
+  -webkit-appearance: none;
+}
+ 
+button,
+input {
+  border: none;
+  background: none;
+  outline: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font: 1rem/1.3  sans-serif;
+  position       : relative;
+  padding: 15px;
+  background-image: url('../images/image.jpg')  ;
+  background-size: cover;
+  height         : 100vh;
+  min-height: 800px;;
+  padding-top: 25px;
+  
+}
+
+body::before {
+content      : "";
+
+background   : rgba(13, 20, 26, 0.7);
+position     : absolute;
+bottom       : 0;
+top          : 0;
+left         : 0;
+right        : 0;
+
+
+}
+
+.container {
+  
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+ /* SECTION #1
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+  .main-wrap{
+    position: absolute;
+    color: var(--text_light);
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  .top-banner {
+    
+    padding: 15px;
+    
+    padding-top: 25px;
+    width: 100%;
+  
+  }
+  
+
+  .heading {
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: 0.02em;
+    padding: 0 0 40px 0;
+    text-align: center;
+   
+    
+  }
+  
+  .top-banner form {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+  }
+  
+  .top-banner form input {
+    
+    font-size: 2rem;
+    height: 40px;
+    padding: 5px 5px 10px;
+    border-bottom: 2px solid;
+    background: var(--text_med);
+    border-radius: 20px 20px 00px 0px;
+    padding-left: 30px;
+  }
+  
+  .top-banner form input::placeholder {
+    color: currentColor; 
+    font-size: 20px;
+    
+  }
+  
+  .top-banner form button {
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    padding: 10px 5px;
+    margin-left: 0px;
+    margin-top: 1rem;
+    border-radius: 5px;
+    background: var(--darkred);
+    transition: background 0.3s ease-in-out;
+    border-radius: 0px 0px 20px 20px;
+    border-bottom: 2px solid;
+  }
+  
+  .top-banner form button:hover {
+    background: var(--red);
+  }
+  
+  .top-banner form .msg {
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    max-width: 450px;
+    min-height: 40px;
+  }
+
+  .top-banner form input,
+    .top-banner form button {
+      width: 100%;
+    }
+
+      
+    /* FOOTER
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .page-footer {
+   text-align:right;
+    font-size: 1rem;
+    color: var(--text_light);
+    margin-top: 10px;
+  
+  }
+  
+  .page-footer span {
+    color: var(--red);
+  }
+  
+  /*  ASYNCHRONOUS REQUEST
+  -------------------------------------------------- */
+
+  main {
+    flex: 1 1 100%;
+    padding: 25px 25px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.location .city {
+  font-size: 32px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.location .date {
+  font-size: 16px;
+}
+
+.current .temp {
+  font-size: 90px;
+  font-weight: 200;
+ }
+
+.current .feels-like {
+  font-size: 20px;
+  font-weight: 200;
+  margin-bottom: 5px;
+}
+
+.current .temp-description {
+  margin-bottom: 15px;
+}
+
+.current .hi-low {
+  font-size: 24px;
+  font-weight: 200;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    padding: 60px;
+  }
+  
+  .top-banner {
+    
+    padding: 30px;
+  
+  
+  }
+  .heading{
+    font-size: 4rem;
+  }
+
+  
+
+.top-banner form {
+    flex-direction: row;
+  
+  }
+
+    .top-banner form button {
+      margin-top: 0rem;
+      margin-left: 15px;
+      border-radius: 0px 20px 0px 20px;
+  }
+
+  
+  .top-banner form input {
+    border-radius: 20px 0px 20px 0px;
+  }
+}
+
+#info-wrap{
+  text-align: center;
+  display: none;
+  margin-top: 1.5rem;
+}
+#info-wrap > span{
+  display: inline-block;
+  padding: 5px 15px;
+  background-color: #9a4c59;
+  border: 1px solid #c3112d;
+  border-radius: 5px;
+}
